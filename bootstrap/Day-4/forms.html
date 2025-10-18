@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.8-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <form>
+        <h1 class="text-danger bg-warning p-4 text-center">SIGN-UP FORM</h1>
+        <div class="my-5">
+            <label class="form-label" for="Name">Name:</label>
+            <input class="form-control" type="text" name="name" id="name" placeholder="Enter your name">
+        </div>
+        <div class="mb-5" >
+            <label class="form-label" for="usn">USN:</label>
+            <input  class="form-control" type="text" name="usn" id="usn">
+        </div>
+        <div class="mb-5">
+            <label class="form-label" for="email_id">Email_id::</label>
+            <input  class="form-control" type="email" name="email_id" id="email_id">
+        </div>
+        <div class="mb-5"> 
+            <label class="form-label" for="password">Password:</label>
+            <input  class="form-control" type="password" password="password" id="password">
+        </div>
+        <div class="mb-5">
+            <label for="for-label">Gender</label>
+            <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div class="mb-5">
+        <label class="form-label" for="language">Languages:</label>
+        <input
+          class="form-check-input"
+          type="checkbox"
+          name="language1"
+          id="Kanada"
+          value="Kanada"
+        />
+        <label class="form-check-label" for="Kanada">Kanada</label>
+        <input
+          class="form-check-input"
+          type="checkbox"
+          name="language2"
+          id="Tamil"
+          value="Tamil"
+        />
+        <label class="form-check-label" for="Tamil">Tamil</label>
+        <input
+          class="form-check-input"
+          type="checkbox"
+          name="language3"
+          id="Telugu"
+          value="Telugu"
+        />
+        <label class="form-check-label" for="Telugu">Telugu</label>
+        <input
+          class="form-check-input"
+          type="checkbox"
+          name="language4"
+          id="Hindi"
+          value="Hindi"
+        />
+        <label class="form-check-label" for="Hindi">Hindi</label>
+      </div>
+      <div class="mb-5">
+        <select class="form-select" name="branch">
+          <option select>select branch</option>
+          <option value="CSE">CSE</option>
+          <option value="ISE">ISE</option>
+          <option value="ECE">ECE</option>
+          <option value="EEE">EEE</option>
+          <option value="CIVIL">CIVIL</option>
+          <option value="MECHANICAL">MECHANICAL</option>
+          <option value="AIDS">AIDS</option>
+          <option value="AIML">AIML</option>
+        </select>
+      </div>
+        <input class="btn btn-outline-success" type="submit"value="Signup">
+        <input class="btn btn-outline-danger" type="submit"value="Cancel">
+        <!-- btn-:button-->
+    </form>
+ <script src="../bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <!-- CSS-Cascading Style Sheets (for designing web pages)-->
+     <!--types of css -->
+     <!--Internal css-->
+     <style>
+        /*selector{
+            property1:value;
+            property2:value;
+            property3:value;
+        } */
+        /*this is CSS comment which we use in style and outside style we use HTML comment*/
+        /*selector-target element*/
+        /*types of selector-element/tag selector,id selector,class selector(id>lass>element)*/
+        /*we can apply color in 3 ways:using name,using rgb(red,green,blue) or rgba(red,green,blue,alpha),using hex ground*/
+        /*TAG SELECTOR*/
+        h1{
+            color:brown;
+            width:fit-content;
+            background-color : chocolate ; /*using name*/
+        }
+        h2{
+            color:#331ad6;/*using hex code*/
+        }
+        p{
+            color:rgb(209, 7, 7);/*using rgb*/
+            /* 0-lowest,255-highest, a ranges from 0-1 */
+            background-color:rgb(234, 239, 232);
+        }
+        /*CLASS SELECTOR*/
+        /*syntax:
+        .classname{
+              property1:value;
+            }*/
+        .para1
+        {
+            color:blueviolet;
+            font-family: "Bitcount Prop Single Ink", system-ui;
+        }
+        .para2
+        {
+            /*Font Properties*/
+            color:white;
+            background-color: black;
+            font-family: "BBH Sans Bartle", sans-serif;
+            line-height: 2;
+            letter-spacing: 2px;
+            word-spacing: 3px;
+            text-align:justify;/*left,right,center,justify*/
+            font-weight: bold;
+            direction:rtl;
+            
+        }
+        .class1
+        {
+            color: aliceblue;
+            background-color:black ;
+            text-align: center;
+        }
+        .class2
+        {
+            color:lightblue;
+            background-color:darkblue ;
+            font-size: 30px;
+        }
+        .class3
+        {
+            color:blue;
+            background-color:greenyellow ;
+        }
+
+        /*ID Selector*/
+        #lastpara
+        {
+            color:red;
+            background-color: #331ad6;
+        }
+     </style>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&display=swap" rel="stylesheet">
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Bitcount+Prop+Single+Ink:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Main Heading</h1>
+    <h2>Sub Heading</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus eaque nihil dolore dicta dolorum corporis reiciendis alias nisi quae veniam! Ducimus fuga libero obcaecati delectus expedita omnis pariatur veniam.</p>
+    <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, non, rerum voluptate doloribus quaerat eum error ratione, sapiente similique quis neque laudantium distinctio optio ipsa nemo aliquid sed quo voluptatibus. Repudiandae, numquam adipisci eaque asperiores harum fugiat ea voluptatibus. Tempore magni quas aliquam. Quidem nostrum aut quas officia reprehenderit libero, iste sequi dolore perspiciatis deleniti ipsam blanditiis eius quia corrupti molestias odio provident! Optio eos iusto unde voluptas itaque nesciunt vitae temporibus doloremque nisi a deleniti blanditiis qui voluptate ea vero, placeat ut dolor, accusantium id! Mollitia, a? Sequi eaque, modi, voluptate nesciunt placeat in ducimus quasi dolore quaerat illo deserunt maxime molestiae animi unde aperiam dolorem error.</p>
+    <p class="para2"> Magnam nam sunt labore, quo laudantium saepe aliquam ratione. Non provident eaque voluptatibus nihil voluptas quo assumenda eligendi sit nisi dolorem ad nobis eveniet maiores animi rerum id voluptatem quia autem sint dolore, soluta officia facere. Minima odio repudiandae iure laudantium quidem quas natus, consequatur reiciendis earum quod libero ipsa ea fugiat magni quos. Doloremque a distinctio voluptatem consectetur debitis excepturi suscipit magni pariatur praesentium repudiandae laborum atque alias qui cum, eligendi, accusamus explicabo tempora, totam perferendis sint iste eaque? Optio officiis dolor vel dolores natus dignissimos iste quia labore cumque perspiciatis. ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus adipisci dolor sunt accusamus quam harum blanditiis quisquam iusto reiciendis corrupti, eum maiores. Sint sapiente, dolore unde ipsam officia eaque expedita.</p>
+    <p id="lastpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sint suscipit molestias quos repellat incidunt natus pariatur dolor. Consectetur, eligendi!</p>
+    <p class="class1 class2 class3">third heading</p>
+</body>
+</html>

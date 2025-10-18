@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- default method-get,it will expose the data in the url.
+     We can use post method to secure the data which will pass the data using HTTP protocol(hypertext transfer protocol)-->
+    <form method="post">     
+        <!--input types in HTML: text,number,email,password,date,week,tel,
+        temp_address,per_address,radio,checkbox,file,range,color,reset,submit-->
+        <!--required - used to make sure the option is filled mandatorily-->
+        Name:<input type="text" name="first_name" id="first_name" maxlength="20" placeholder="Enter your name" required><br><br>
+        <!-- placeholder="",It specifies what to enter-->
+         <input type="hidden" name="secret" id="secret" value="JAI SHREE RAM">
+        Age:<input type="number" name="age" id="age" min="0" max="100"><br><br>
+        usn:<input type="text" name="usn" id="usn" disabled value="1CE24CS049"><br><br>
+        usn:<input type="text" name="usn" id="usn" readonly value="1CE24CS049"><br><br>
+        E-mail:<input type="email" name="email_id" id="email_id" required><br><br>
+        Password:<input type="password" name="password" id="password"><br><br>
+        <!--label is used for showing,value is used for storing-->
+        <label for="dob">DOB:</label>
+        <input type="date" name="DOB" id="DOB" min="2000-01-01" max="2025-10-10"><br><br>
+        <label for="hbdweek">Birthday Week:</label>
+        <input type="week" name="hbdweek" id="hbdweek"><br><br>
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" id="phone"><br><br>
+        <!-- textarea-can type more information for detailed address -->
+        <label for="temp_address">Temporary Address:</label>
+        <textarea name="temp_address" id="temp_address" rows="5" cols="20"></textarea><br><br>
+        <label for="per_address">Permanent Address:</label>
+        <textarea name="per_address" id="per_address" rows="5" cols="20"></textarea><br><br>
+        <!--radio is used for single choice-->
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" id="others" value="others">
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" id="others" value="others">
+        <br><br>  <!--checkbox is used for multiple choice/options-->
+        <label for="hobbies">Hobbies:</label>
+        <input type="checkbox" name="talking" id="talking" value="talk">
+        <label for="talking">Talking</label>
+        <input type="checkbox" name="travelling" id="travelling" value="travel">  
+        <label for="travelling">Travelling</label>
+        <input type="checkbox" name="hiking" id="hiking" value="hike">
+        <label for="hiking">Hiking</label>
+        <input type="checkbox" name="gaming" id="gaming" value="play">
+        <label for="gaming">Gaming</label>
+        <br><br>
+        <label for="state">State:</label>
+        <select name="state" id="state">
+            <option value="KA" selected>Karnataka</option><!--selected : Default it should take-->
+            <option value="TN">Tamil Nadu</option>
+            <option value="KL">Kerala</option>
+            <option value="MH">Maharashtra</option>
+            <option value="UP">Uttar Pradesh</option>
+            <option value="GJ">Gujarat</option>
+            <option value="AP">Andhra Pradesh</option>
+            <option value="TS">Telangana</option>
+        </select>
+        <br><br>
+        <label for="photos">Upload photo:</label>
+        <!--accept-to select only images,videos or audio-->
+        <input type="file" name="photos" id="photos" accept="images/*"><br><br> 
+        <label for="rating">Rating:</label>
+        <input type="range" name="rating" id="rating" value="0"><br><br>
+        <label for="fav_color">Favourite_colour:</label>
+        <input type="color" name="fav_color" id="fav_color"><br><br>
+        <input type="reset" value="Reset Form">
+        <input type="submit" value="Submit Form">
+    </form>
+</body>
+</html>
