@@ -1,0 +1,3 @@
+project
+npm create vite@latest first-react-app --template react
+npm create vite@latest bootstrap-website--template react
